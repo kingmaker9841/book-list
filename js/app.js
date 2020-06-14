@@ -34,6 +34,9 @@ if ((title.value && author.value && isbn.value) === ''){
   exit(1);
 }
 let valBooks = JSON.parse(localStorage.getItem("myBookApp"));
+if (valBooks === null){
+  return;
+}else{
 valBooks.forEach((item)=>{
   if (isbn.value === item.isbn){
     let el = document.createElement('p');
@@ -46,6 +49,7 @@ valBooks.forEach((item)=>{
     exit(1);
   }
 });
+}
 }
 validate();
 
