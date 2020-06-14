@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Book List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="icon" href="./images/favicon.png">
+  </head>
+  <body>
+    <header class="container">
+      <section class="content-container">
+        <fieldset>
+          <legend>
+            <i class="fas fa-book-open fa-4x"></i>
+            <h1>My<span class="book">Book</span>List</h1>
+          </legend>
+          <form class="myForm" id="myForm" action="index.html" method="post">
+            <label for="title">
+              <div>Title:</div>
+              <input type="text" name="" value="" id="title" class="title">
+            </label>
+            <label for="author">
+              <div>Author:</div>
+              <input type="text" name="" value="" id="author" class="author">
+            </label>
+            <label for="isbn">
+              <div>ISBN:</div>
+              <input type="text" name="" value="" id="isbn" class="isbn">
+            </label>
+            <button type="submit" name="button" id="btn" class="btn">
+              Submit
+            </button>
+          </form>
+          <table border="0" cellpadding="10" cellspacing="10">
+            <tbody id="tbody">
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN</th>
+            </tbody>
+          </table>
+        </fieldset>
+
+      </section>
+    </header>
+    <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>
